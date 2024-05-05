@@ -72,23 +72,24 @@ public class TestOtomasyonuStepdefinitions {
 
     @Then("account linkine tiklar")
     public void account_linkine_tiklar() {
-
+        testotomasyonuPage.accountLinki.click();
     }
     @Then("email olarak test datalarindan {string} kullanir")
-    public void email_olarak_test_datalarindan_kullanir(String string) {
+    public void email_olarak_test_datalarindan_kullanir(String testDataEmail) {
 
+        testotomasyonuPage.emailKutusu.sendKeys(ConfigReader.getProperty(testDataEmail));
     }
     @Then("password olarak test datalarindan {string} kulllanir")
-    public void password_olarak_test_datalarindan_kulllanir(String string) {
-
+    public void password_olarak_test_datalarindan_kulllanir(String testDataPassword) {
+        testotomasyonuPage.passwordKutusu.sendKeys(ConfigReader.getProperty(testDataPassword));
     }
     @Then("Sign in butonuna basar")
     public void sign_in_butonuna_basar() {
-
+        testotomasyonuPage.loginSayfasiLoginButonu.click();
     }
     @Then("basarili olarak giris yapildigini test eder")
     public void basarili_olarak_giris_yapildigini_test_eder() {
-
+        Assert.assertTrue(testotomasyonuPage.logoutButonu.isDisplayed());
     }
 
 }
