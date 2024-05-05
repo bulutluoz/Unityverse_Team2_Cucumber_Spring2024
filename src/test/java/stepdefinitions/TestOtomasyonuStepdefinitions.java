@@ -96,4 +96,15 @@ public class TestOtomasyonuStepdefinitions {
     public void girisYapilamadiginiTestEder() {
         Assert.assertTrue(testotomasyonuPage.emailKutusu.isDisplayed());
     }
+
+    @And("email olarak {string} kullanir")
+    public void emailOlarakKullanir(String yazilanEmail) {
+        testotomasyonuPage.emailKutusu.sendKeys(yazilanEmail);
+    }
+
+    @And("password olarak {string} kulllanir")
+    public void passwordOlarakKulllanir(String yazilanPassword) {
+
+        testotomasyonuPage.passwordKutusu.sendKeys(yazilanPassword);
+    }
 }

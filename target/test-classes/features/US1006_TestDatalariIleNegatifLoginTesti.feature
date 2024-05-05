@@ -14,7 +14,7 @@
       And 3 saniye bekler
       And sayfayi kapatir
 
-
+    @smoke
     Scenario: TC12 test datasi olarak verilen
               gecersiz email ve gecersiz password ile giris yapilamamali
 

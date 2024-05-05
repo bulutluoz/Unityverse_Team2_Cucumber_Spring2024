@@ -1,4 +1,5 @@
 
+  @smoke
   Feature: US1004 kullanici test datalarini parametre olarak kullanir
 
     Scenario: TC08 gidilecek url'i parametre olarak test datalarindan alabilmeli
