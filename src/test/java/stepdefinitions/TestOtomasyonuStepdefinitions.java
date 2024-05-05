@@ -1,5 +1,6 @@
 package stepdefinitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -8,6 +9,7 @@ import org.openqa.selenium.Keys;
 import pages.TestotomasyonuPage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class TestOtomasyonuStepdefinitions {
 
@@ -44,5 +46,27 @@ public class TestOtomasyonuStepdefinitions {
     public void aramaKutusunaYazipEnterTusunaBasar(String istenenKelime) {
         testotomasyonuPage.aramaKutusu.sendKeys(istenenKelime + Keys.ENTER);
 
+    }
+
+    @And("{int} saniye bekler")
+    public void saniyeBekler(int sure) {
+
+        ReusableMethods.bekle(sure);
+
+    }
+
+    @Given("kullanici {string} anasayfaya gider")
+    public void kullaniciAnasayfayaGider(String testDataIstenenUrl) {
+
+        Driver.getDriver().get(ConfigReader.getProperty(testDataIstenenUrl));
+    }
+
+    @Then("istenen {string} sayfasina gidildigini test eder")
+    public void istenenSayfasinaGidildiginiTestEder(String istenenUrl) {
+
+        String expectedUrl = ConfigReader.getProperty(istenenUrl);
+        String actualUrl = Driver.getDriver().getCurrentUrl();
+
+        Assert.assertEquals(expectedUrl,actualUrl);
     }
 }
