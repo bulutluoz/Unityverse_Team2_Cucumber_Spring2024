@@ -1,7 +1,7 @@
 
   Feature: US1008 kullanici herokuApp sayfasinda butonlarin calistigini test eder
 
-    @wip
+
     Scenario: TC14 add ve remove butonlari calisir durumda olmali
 
       Given kullanici "herokuUrl" anasayfaya gider
