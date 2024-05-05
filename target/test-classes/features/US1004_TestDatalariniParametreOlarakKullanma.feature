@@ -11,7 +11,7 @@
 
 
     Scenario: TC09 kullanici istenen sayfaya gidildigini test eder
-      Given kullanici "toUrl" anasayfaya gider
-      Then istenen "toUrl" sayfasina gidildigini test eder
+      Given kullanici "zeroWebAppUrl" anasayfaya gider
+      Then istenen "zeroWebAppUrl" sayfasina gidildigini test eder
       And 4 saniye bekler
       And sayfayi kapatir

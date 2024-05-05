@@ -69,4 +69,26 @@ public class TestOtomasyonuStepdefinitions {
 
         Assert.assertEquals(expectedUrl,actualUrl);
     }
+
+    @Then("account linkine tiklar")
+    public void account_linkine_tiklar() {
+
+    }
+    @Then("email olarak test datalarindan {string} kullanir")
+    public void email_olarak_test_datalarindan_kullanir(String string) {
+
+    }
+    @Then("password olarak test datalarindan {string} kulllanir")
+    public void password_olarak_test_datalarindan_kulllanir(String string) {
+
+    }
+    @Then("Sign in butonuna basar")
+    public void sign_in_butonuna_basar() {
+
+    }
+    @Then("basarili olarak giris yapildigini test eder")
+    public void basarili_olarak_giris_yapildigini_test_eder() {
+
+    }
+
 }
