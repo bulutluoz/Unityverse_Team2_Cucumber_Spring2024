@@ -7,8 +7,6 @@
       Then account linkine tiklar
       And email olarak test datalarindan "toGecerliEmail" kullanir
       And password olarak test datalarindan "toGecerliPassword" kulllanir
-      And 3 saniye bekler
       Then Sign in butonuna basar
       And basarili olarak giris yapildigini test eder
-      And 3 saniye bekler
       And sayfayi kapatir

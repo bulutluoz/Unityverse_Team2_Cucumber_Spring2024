@@ -92,4 +92,8 @@ public class TestOtomasyonuStepdefinitions {
         Assert.assertTrue(testotomasyonuPage.logoutButonu.isDisplayed());
     }
 
+    @Then("giris yapilamadigini test eder")
+    public void girisYapilamadiginiTestEder() {
+        Assert.assertTrue(testotomasyonuPage.emailKutusu.isDisplayed());
+    }
 }
