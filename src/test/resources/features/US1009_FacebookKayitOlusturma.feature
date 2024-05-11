@@ -1,6 +1,6 @@
 Feature: US1009 Kullanici fake degerlerle facebook da kayit olusturur
 
-  @wip
+
   Scenario: TC15 fake bilgilerle facebookta kayit olusturma
 
     Given kullanici "facebookUrl" anasayfaya gider
