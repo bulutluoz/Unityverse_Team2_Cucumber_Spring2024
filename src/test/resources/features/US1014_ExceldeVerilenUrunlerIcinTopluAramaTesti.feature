@@ -1,6 +1,6 @@
 
   Feature:US1014 Kullanici excelde verilen urunler icin arama testi yapar
-    @wip
+
     Scenario Outline: TC20 excelde verilen urunlerin arama sonuc sayisinin
                       excel'de verilen minumum sonuc sayisindan buyuk esit oldugunu test eder
 
