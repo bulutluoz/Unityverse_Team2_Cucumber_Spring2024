@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="3.702" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="US1001 testotomasyonu phone arama" name="TC01 kullanici testotomasyonu sayfasinda phone aratabilmeli" time="3.616">
+<system-out><![CDATA[
+Given kullanici testotomasyonu anasayfaya gider.............................passed
+When arama kutusuna phone yazip enter tusuna basar..........................passed
+Then arama sonucunda urun bulunabildigini test eder.........................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

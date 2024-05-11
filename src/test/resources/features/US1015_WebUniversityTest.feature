@@ -1,7 +1,7 @@
 
   Feature: US1015 webUniversity negatif login testi
 
-    @wip
+
     Scenario: TC21 yanlis kullanici bilgileri ile webUniversity sayfasina giris yapilamaz
 
       Given kullanici "webUniUrl" anasayfaya gider
