@@ -6,6 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import pages.TestotomasyonuPage;
 import utilities.ConfigReader;
 import utilities.Driver;
@@ -94,7 +95,19 @@ public class TestOtomasyonuStepdefinitions {
 
     @Then("giris yapilamadigini test eder")
     public void girisYapilamadiginiTestEder() {
-        Assert.assertTrue(testotomasyonuPage.emailKutusu.isDisplayed());
+        // email kutusunu locate edemiyorsa
+        // giris yapilmis demektir ve test fail olur
+
+        try {
+
+            Assert.assertTrue(testotomasyonuPage.emailKutusu.isDisplayed());
+
+        } catch (NoSuchElementException e) {
+
+            // sisteme login olmus demektir
+            testotomasyonuPage.logoutButonu.click();
+            Assert.assertTrue(false); // mutlaka failed olacak bir assertion
+        }
     }
 
     @And("email olarak {string} kullanir")

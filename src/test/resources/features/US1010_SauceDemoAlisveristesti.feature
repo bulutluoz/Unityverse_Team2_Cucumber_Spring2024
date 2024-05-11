@@ -1,7 +1,7 @@
 
   Feature: US1010 Kullanici sauceDemo sayfasinda alisveris yapabilir
 
-    @wip
+
     Scenario: TC16 kullanici sectigi urunun sepete eklendigini test eder
 
       Given kullanici "sauceUrl" anasayfaya gider
