@@ -1,7 +1,7 @@
 
   Feature: US1013 direk verilen gecersiz bilgilerle sisteme giris yapilamamali
 
-    @wip
+
     Scenario Outline: TC19 verilen gecersiz bilgileri tek tek deneyip
                       sisteme giris yapilamadigini test eder
 
