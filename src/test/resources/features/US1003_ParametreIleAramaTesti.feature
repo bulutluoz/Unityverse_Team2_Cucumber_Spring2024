@@ -1,6 +1,6 @@
 
-  Feature: US1004 kullanici istedigi kelimeyi aratir
-    @wip
+  Feature: US1003 kullanici istedigi kelimeyi aratir
+
     Scenario: TC07 kullanici testotomasyonu sayfasinda istedigi kelimeyi aratabilmeli
 
       Given kullanici testotomasyonu anasayfaya gider

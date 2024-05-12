@@ -12,7 +12,7 @@ Feature: US1002 kullanici BackGround ile bastaki tekrar eden adimlari calistirir
     Then arama sonucunda urun bulunabildigini test eder
     And sayfayi kapatir
 
-
+  @regression
   Scenario: TC05 kullanici testotomasyonu sayfasinda dress aratabilmeli
     When arama kutusuna dress yazip enter tusuna basar
     Then arama sonucunda urun bulunabildigini test eder
