@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="0.128" tests="2" skipped="0" failures="1" errors="0">
-<testcase classname="US1004 kullanici istedigi kelimeyi aratir" name="TC07 kullanici testotomasyonu sayfasinda istedigi kelimeyi aratabilmeli" time="0.015">
-<system-out><![CDATA[
-Given kullanici testotomasyonu anasayfaya gider.............................passed
-When arama kutusuna "dress" yazip enter tusuna basar........................passed
-Then arama sonucunda urun bulunabildigini test eder.........................passed
-And 1 saniye bekler.........................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="US1016 kullanici automation exercise sayfasinda kullanici olusturur" name="TC22 kullanici fake bilgilerle yeni kayit olusturabilmeli" time="0.003">
-<failure/>
+<testsuite name="Cucumber" time="24.861" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="US1016 kullanici automation exercise sayfasinda kullanici olusturur" name="TC22 kullanici fake bilgilerle yeni kayit olusturabilmeli" time="24.778">
 <system-out><![CDATA[
 Given kullanici "autoExUrl" anasayfaya gider................................passed
-And user sign up linkine tiklar.............................................undefined
-And user Create an account bölümüne email adresi girer......................skipped
-And signUp butonuna basar...................................................skipped
-And user kisisel bilgilerini ve iletisim bilgilerini girer..................skipped
-And user Create Account butonuna basar......................................skipped
-Then hesap olustugunu test edin.............................................skipped
+And user sign up linkine tiklar.............................................passed
+And user Create an account bolumune fake isim ve email adresi girer.........passed
+And signUp butonuna basar...................................................passed
+And user kisisel bilgilerini ve iletisim bilgilerini girer..................passed
+And user Create Account butonuna basar......................................passed
+And 15 saniye bekler........................................................passed
+Then hesap olustugunu test edin.............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
