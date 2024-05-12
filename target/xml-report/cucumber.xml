@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="24.861" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="US1016 kullanici automation exercise sayfasinda kullanici olusturur" name="TC22 kullanici fake bilgilerle yeni kayit olusturabilmeli" time="24.778">
+<testsuite name="Cucumber" time="0.123" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="US1017 kullanici sirket listesini kontrol eder" name="TC23 verilen sirket isminin listede oldugunu test eder" time="0.014">
+<failure/>
 <system-out><![CDATA[
-Given kullanici "autoExUrl" anasayfaya gider................................passed
-And user sign up linkine tiklar.............................................passed
-And user Create an account bolumune fake isim ve email adresi girer.........passed
-And signUp butonuna basar...................................................passed
-And user kisisel bilgilerini ve iletisim bilgilerini girer..................passed
-And user Create Account butonuna basar......................................passed
-And 15 saniye bekler........................................................passed
-Then hesap olustugunu test edin.............................................passed
+Given kullanici "guruUrl" anasayfaya gider..................................passed
+Then Company listesini konsola yazdirir.....................................undefined
+And "DCB Bank" in listede oldugunu test eder................................skipped
 ]]></system-out>
 </testcase>
 </testsuite>

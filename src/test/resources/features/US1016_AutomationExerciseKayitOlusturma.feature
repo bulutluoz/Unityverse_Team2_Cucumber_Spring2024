@@ -1,7 +1,7 @@
 
   Feature: US1016 kullanici automation exercise sayfasinda kullanici olusturur
 
-    @wip
+
     Scenario:TC22 kullanici fake bilgilerle yeni kayit olusturabilmeli
       
       Given kullanici "autoExUrl" anasayfaya gider
