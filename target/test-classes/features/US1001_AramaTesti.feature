@@ -5,7 +5,7 @@
       # eger yazilan tum adimlarin stepdefinition'lari tanimli ise kod otomatik olarak calisir
       # tanimli olmayan adim varsa sadece o adim icin stepdefinition olusturmamizi bekler
       # burada yazilan adimlar method call olarak calistigi icin case sensitive'dir
-    @smoke @E2E @sistem @wip
+    @smoke @E2E @sistem
     Scenario: TC01 kullanici testotomasyonu sayfasinda phone aratabilmeli
 
       Given kullanici testotomasyonu anasayfaya gider

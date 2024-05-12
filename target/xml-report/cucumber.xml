@@ -1,10 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="3.702" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="US1001 testotomasyonu phone arama" name="TC01 kullanici testotomasyonu sayfasinda phone aratabilmeli" time="3.616">
+<testsuite name="Cucumber" time="29.859" tests="4" skipped="0" failures="0" errors="0">
+<testcase classname="US1001 testotomasyonu phone arama" name="TC01 kullanici testotomasyonu sayfasinda phone aratabilmeli" time="5.815">
 <system-out><![CDATA[
 Given kullanici testotomasyonu anasayfaya gider.............................passed
 When arama kutusuna phone yazip enter tusuna basar..........................passed
 Then arama sonucunda urun bulunabildigini test eder.........................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1004 kullanici test datalarini parametre olarak kullanir" name="TC08 gidilecek url'i parametre olarak test datalarindan alabilmeli" time="7.401">
+<system-out><![CDATA[
+Given kullanici "toUrl" anasayfaya gider....................................passed
+When arama kutusuna "baby" yazip enter tusuna basar.........................passed
+Then arama sonucunda urun bulunabildigini test eder.........................passed
+And 3 saniye bekler.........................................................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1004 kullanici test datalarini parametre olarak kullanir" name="TC09 kullanici istenen sayfaya gidildigini test eder" time="8.268">
+<system-out><![CDATA[
+Given kullanici "zeroWebAppUrl" anasayfaya gider............................passed
+Then istenen "zeroWebAppUrl" sayfasina gidildigini test eder................passed
+And 4 saniye bekler.........................................................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1006 test datasi olarak verilen gecersiz bilgilerle giris yapilamaz" name="TC12 test datasi olarak verilen" time="8.253">
+<system-out><![CDATA[
+Given kullanici "toUrl" anasayfaya gider....................................passed
+Then account linkine tiklar.................................................passed
+And email olarak test datalarindan "toGecersizEmail" kullanir...............passed
+And password olarak test datalarindan "toGecersizPassword" kulllanir........passed
+When Sign in butonuna basar.................................................passed
+Then giris yapilamadigini test eder.........................................passed
+And 3 saniye bekler.........................................................passed
 And sayfayi kapatir.........................................................passed
 ]]></system-out>
 </testcase>

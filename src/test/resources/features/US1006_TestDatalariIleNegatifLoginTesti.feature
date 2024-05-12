@@ -1,7 +1,7 @@
 
   Feature: US1006 test datasi olarak verilen gecersiz bilgilerle giris yapilamaz
 
-
+    @E2E
     Scenario: TC11 test datasi olarak verilen
               gecerli email ve gecersiz password ile giris yapilamamali
 
