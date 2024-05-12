@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Cucumber" time="0.123" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="US1017 kullanici sirket listesini kontrol eder" name="TC23 verilen sirket isminin listede oldugunu test eder" time="0.014">
+<testcase classname="US1020 kullanici excelden istenen testleri yapar" name="Exceldeki datalar test edilebilmeli" time="0.013">
 <failure/>
 <system-out><![CDATA[
-Given kullanici "guruUrl" anasayfaya gider..................................passed
-Then Company listesini konsola yazdirir.....................................undefined
-And "DCB Bank" in listede oldugunu test eder................................skipped
+Given kullanici ulkeler excelinde "Sayfa1"'e gider..........................undefined
+Then 1.satir 2.hucredeki bilgiyi yazdirir...................................skipped
+And baskenti "Jakarta" olan ulke isminin "Endonezya" oldugunu test eder.....skipped
+And ulke sayisinin 190 oldugunu test eder...................................skipped
+And fiziki olarak kullanilan satir sayisinin 191 oldugunu test eder.........skipped
 ]]></system-out>
 </testcase>
 </testsuite>

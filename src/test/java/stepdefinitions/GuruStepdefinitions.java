@@ -58,4 +58,19 @@ public class GuruStepdefinitions {
             }
         }
     }
+
+    @And("{int}. satir , {int}.sutundaki datayi yazdirir")
+    public void satirSutundakiDatayiYazdirir(int satirNo, int sutunNo) {
+
+        // istenen satir ve sutun degerindeki datanin dinamik xpath'i :
+        // (//tbody)[2]/tr[    satirNo     ]/td[    sutunNo    ]
+
+        String dinamikXpath = "(//tbody)[2]/tr[" + satirNo + "]/td[" + sutunNo + "]";
+
+        String istenenData = Driver.getDriver()
+                                    .findElement(By.xpath(dinamikXpath))
+                                    .getText();
+
+        System.out.println(satirNo +".satir," + sutunNo +".sutundaki data : " + istenenData);
+    }
 }
